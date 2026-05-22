@@ -37,8 +37,8 @@ def verfuegbare_kategorien(fragen_liste: List[Frage]) -> List[str]:
     return kategorien
 
 def quiz_nach_kategorie(
-    alle_fragen = lade_fragen_aus_json("fragen.json"),
-    alle_ergebnisse: List[Ergebnis] = []
+    alle_fragen: List[Frage],
+    alle_ergebnisse: List[Ergebnis],
 ) -> None:
     
     
@@ -88,7 +88,8 @@ def quiz_nach_kategorie(
 
 
 def quiz_nach_schwierigkeit(
-    alle_fragen: List[Frage], alle_ergebnisse: List[Ergebnis]
+    alle_fragen: List[Frage],
+    alle_ergebnisse: List[Ergebnis]
 ) -> None:
     """
     Lässt den Benutzer eine Schwierigkeitsstufe wählen und startet dann
