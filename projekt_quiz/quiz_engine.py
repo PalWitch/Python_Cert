@@ -1,8 +1,11 @@
 from typing import List, Dict, Any
+from fragen_laden import lade_fragen_aus_json, Frage
 import random
 
 Frage = Dict[str, Any]
 Ergebnis = Dict[str, Any]
+
+MAX_FRAGEN = 10 
 
 FARBE_GRUEN = "\033[92m"
 FARBE_ROT = "\033[91m"
@@ -34,8 +37,11 @@ def verfuegbare_kategorien(fragen_liste: List[Frage]) -> List[str]:
     return kategorien
 
 def quiz_nach_kategorie(
-    alle_fragen: List[Frage], alle_ergebnisse: List[Ergebnis]
+    alle_fragen = lade_fragen_aus_json("fragen.json"),
+    alle_ergebnisse: List[Ergebnis] = []
 ) -> None:
+    
+    
     """
     Lässt den Benutzer eine Kategorie wählen und startet dann ein Quiz
     nur mit Fragen aus dieser Kategorie.
@@ -181,6 +187,10 @@ def run_quiz(fragen_liste: List[Frage]) -> Ergebnis:
     """
     fragen_kopie = fragen_liste.copy()
     random.shuffle(fragen_kopie)
+
+    if len(fragen_kopie) > MAX_FRAGEN:
+        fragen_kopie = fragen_kopie[:MAX_FRAGEN]
+
 
     gesamt_anzahl_fragen = len(fragen_kopie)
     punktestand = 0

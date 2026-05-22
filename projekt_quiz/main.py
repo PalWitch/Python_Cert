@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from fragen import fragen  
+from fragen_laden import Frage 
 import quiz_engine
 
 print("Herzlich Willkommen zum PCEP/PCAP-Quiz!  by AnnK")
@@ -27,16 +27,16 @@ def programm_starten() -> None:
         auswahl = input("Bitte wähle eine Option (1-5): ")
 
         if auswahl == "1":
-            ergebnis = quiz_engine.run_quiz(fragen)
+            ergebnis = quiz_engine.run_quiz(Frage)
             alle_ergebnisse.append(ergebnis)
             quiz_engine.zeige_ergebnis(ergebnis)
 
         elif auswahl == "2":
             # Quiz nach Kategorie
-            quiz_engine.quiz_nach_kategorie(fragen, alle_ergebnisse)
+            quiz_engine.quiz_nach_kategorie(Frage, alle_ergebnisse)
 
         elif auswahl == "3":
-            quiz_engine.quiz_nach_schwierigkeit(fragen, alle_ergebnisse)
+            quiz_engine.quiz_nach_schwierigkeit(Frage, alle_ergebnisse)
         
         elif auswahl == "4":
             if not alle_ergebnisse:
