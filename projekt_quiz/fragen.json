@@ -195,5 +195,547 @@
     "erklaerung": "Der Slice startet bei Index 1 (y) und geht bis vor Index 4, also 'yth'.",
     "kategorie": "Strings",
     "schwierigkeit": 3
+},
+{
+    "frage": "Was ist der Ausgabewert von [x * 2 for x in range(3)]?",
+    "antworten": ["[0, 2, 4]", "[2, 4, 6]", "[0, 1, 2]", "[1, 2, 3]"],
+    "antworten_richtig": 0,
+    "erklaerung": "range(3) erzeugt 0, 1, 2. Jeder Wert wird mit 2 multipliziert: [0, 2, 4].",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Welche Syntax erzeugt eine List Comprehension?",
+    "antworten": ["(x for x in list)", "{x for x in list}", "[x for x in list]", "<x for x in list>"],
+    "antworten_richtig": 2,
+    "erklaerung": "List Comprehensions verwenden eckige Klammern: [ausdruck for element in iterable].",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Was gibt [x for x in range(5) if x % 2 == 0] zurück?",
+    "antworten": ["[0, 2, 4]", "[1, 3]", "[2, 4]", "[0, 1, 2, 3, 4]"],
+    "antworten_richtig": 0,
+    "erklaerung": "Die Comprehension filtert gerade Zahlen aus range(5): 0, 2 und 4.",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Was ist das Ergebnis von {x: x**2 for x in range(3)}?",
+    "antworten": ["{0: 0, 1: 1, 2: 4}", "[0, 1, 4]", "{0, 1, 4}", "{'x': 'x**2'}"],
+    "antworten_richtig": 0,
+    "erklaerung": "Dictionary Comprehension mit geschweiften Klammern und Doppelpunkt: Key x wird auf Wert x**2 gemappt.",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Welches Ergebnis hat {x for x in [1, 2, 2, 3, 3, 3]}?",
+    "antworten": ["{1, 2, 3}", "[1, 2, 3]", "{1, 2, 2, 3, 3, 3}", "[1, 2, 2, 3, 3, 3]"],
+    "antworten_richtig": 0,
+    "erklaerung": "Set Comprehension entfernt Duplikate automatisch, Ergebnis ist ein Set: {1, 2, 3}.",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Was liefert [x if x > 0 else 0 for x in [-1, 2, -3, 4]]?",
+    "antworten": ["[0, 2, 0, 4]", "[-1, 2, -3, 4]", "[2, 4]", "[0, 0, 0, 0]"],
+    "antworten_richtig": 0,
+    "erklaerung": "Conditional Expression: negative Werte werden zu 0, positive bleiben: [0, 2, 0, 4].",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Was ist der Unterschied zwischen [x for x in range(3)] und (x for x in range(3))?",
+    "antworten": [
+        "Erstes ist eine Liste, zweites ein Generator",
+        "Beide sind identisch",
+        "Erstes ist ein Tuple, zweites eine Liste",
+        "Zweites gibt einen Fehler"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "Eckige Klammern erzeugen eine List Comprehension, runde Klammern einen Generator Expression.",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Was gibt [[x * y for x in range(1, 3)] for y in range(1, 3)] zurück?",
+    "antworten": [
+        "[[1, 2], [2, 4]]",
+        "[[1, 1], [2, 2]]",
+        "[1, 2, 2, 4]",
+        "[[1, 2, 3], [1, 2, 3]]"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "Nested Comprehension: Äußere Schleife y=1,2; innere x=1,2. Ergebnis: [[1*1, 2*1], [1*2, 2*2]] = [[1, 2], [2, 4]].",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 3
+},
+{
+    "frage": "Was ist das Ergebnis von {k: v for k, v in zip(['a', 'b'], [1, 2])}?",
+    "antworten": [
+        "{'a': 1, 'b': 2}",
+        "[('a', 1), ('b', 2)]",
+        "{'a', 'b', 1, 2}",
+        "[(1, 'a'), (2, 'b')]"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "zip() kombiniert die Listen zu Paaren, Dictionary Comprehension mappt Keys auf Values: {'a': 1, 'b': 2}.",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 3
+},
+{
+    "frage": "Was ist das Ergebnis von [x + y for x in 'ab' for y in '12']?",
+    "antworten": [
+        "['a1', 'a2', 'b1', 'b2']",
+        "['ab', '12']",
+        "['a', 'b', '1', '2']",
+        "['ab12']"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "Verschachtelte Iteration: für jedes x alle y durchgehen. Ergebnis: a+1, a+2, b+1, b+2 = ['a1', 'a2', 'b1', 'b2'].",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 3
+},
+{
+    "frage": "Welcher Code ist äquivalent zu [x for x in range(10) if x % 2 == 0 if x % 3 == 0]?",
+    "antworten": [
+        "[x for x in range(10) if x % 2 == 0 and x % 3 == 0]",
+        "[x for x in range(10) if x % 2 == 0 or x % 3 == 0]",
+        "[x if x % 2 == 0 and x % 3 == 0 for x in range(10)]",
+        "[x for x in range(10) if x % 6 == 0]"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "Mehrere if-Bedingungen hintereinander entsprechen einer and-Verknüpfung. Beide Varianten filtern nur Zahlen, die durch 2 UND 3 teilbar sind.",
+    "kategorie": "Comprehensions",
+    "schwierigkeit": 3
+},
+{
+  "frage": "Was beschreibt der Begriff 'Syntax' in Programmiersprachen?",
+  "antworten": [
+    "Die Bedeutung des Programmcodes",
+    "Die Schreibweise und Struktur des Codes",
+    "Die Geschwindigkeit des Interpreters",
+    "Die Speichergröße des Programms"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "Syntax beschreibt die formalen Regeln, wie Code geschrieben und strukturiert sein muss, damit er gültig ist.",
+  "kategorie": "Begriffe",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was ist ein Interpreter im Kontext von Python?",
+  "antworten": [
+    "Ein Programm, das Quellcode Zeile für Zeile ausführt",
+    "Ein Programm, das Quellcode in Maschinensprache übersetzt und eine EXE-Datei erzeugt",
+    "Ein Texteditor für Python-Code",
+    "Ein Debugger für Python"
+  ],
+  "antworten_richtig": 0,
+  "erklaerung": "Der Python-Interpreter liest und führt den Quellcode direkt aus, meist Zeile für Zeile.",
+  "kategorie": "Begriffe",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welches der folgenden Wörter ist in Python ein Keyword?",
+  "antworten": [
+    "value",
+    "print",
+    "for",
+    "variable"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "for ist ein reserviertes Schlüsselwort (Keyword) in Python, das für Schleifen verwendet wird.",
+  "kategorie": "Keywords",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Wie beginnt man in Python einen einzeiligen Kommentar?",
+  "antworten": [
+    "// Kommentar",
+    "# Kommentar",
+    "/* Kommentar */",
+    "<!-- Kommentar -->"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "Einzeilige Kommentare beginnen in Python mit einem #-Zeichen.",
+  "kategorie": "Kommentare",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welche Aussage über Einrückung (Indentation) in Python ist korrekt?",
+  "antworten": [
+    "Einrückung ist nur für die Lesbarkeit wichtig, aber optional",
+    "Einrückung definiert Code-Blöcke und ist zwingend erforderlich",
+    "Einrückung darf nur mit Tabs gemacht werden",
+    "Einrückung darf nur mit genau einem Leerzeichen gemacht werden"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "In Python werden Code-Blöcke durch Einrückung definiert, daher ist korrekte Einrückung zwingend.",
+  "kategorie": "Syntax",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welcher Wert entspricht der wissenschaftlichen Notation 1e3 in Python?",
+  "antworten": [
+    "0.001",
+    "1.3",
+    "1000.0",
+    "1000000.0"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "1e3 bedeutet 1 · 10^3, also 1000.0.",
+  "kategorie": "Literals",
+  "schwierigkeit": 2
+},
+{
+  "frage": "Welcher Ausdruck entspricht der binären Zahl 0b1010 in Dezimal?",
+  "antworten": [
+    "8",
+    "9",
+    "10",
+    "12"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "0b1010 ist 1·8 + 0·4 + 1·2 + 0·1 = 10 im Dezimalsystem.",
+  "kategorie": "Zahlensysteme",
+  "schwierigkeit": 2
+}, 
+{
+  "frage": "Welcher Ausdruck entspricht der binären Zahl 0b1010 in Dezimal?",
+  "antworten": [
+    "8",
+    "9",
+    "10",
+    "12"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "0b1010 ist 1·8 + 0·4 + 1·2 + 0·1 = 10 im Dezimalsystem.",
+  "kategorie": "Zahlensysteme",
+  "schwierigkeit": 2
+}, 
+{
+  "frage": "Welcher Präfix kennzeichnet in Python eine hexadezimale Zahl?",
+  "antworten": [
+    "0b",
+    "0x",
+    "0o",
+    "#x"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "Hexadezimale Literale beginnen in Python mit 0x, z.B. 0xFF.",
+  "kategorie": "Zahlensysteme",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welcher Variablenname entspricht den PEP-8-Empfehlungen für Bezeichner?",
+  "antworten": [
+    "UserName",
+    "user_name",
+    "userName",
+    "USER-NAME"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "PEP-8 empfiehlt für Variablennamen snake_case, also Kleinbuchstaben mit Unterstrichen.",
+  "kategorie": "PEP-8",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welcher Ausdruck weist einer Variablen korrekt einen Wert zu?",
+  "antworten": [
+    "x == 5",
+    "x := 5",
+    "x = 5",
+    "5 = x"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "Die Zuweisung erfolgt mit = in der Form variable = wert.",
+  "kategorie": "Variablen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was gibt print('a', 'b', sep='-') aus?",
+  "antworten": [
+    "ab",
+    "a-b",
+    "a b",
+    "a-b-"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "sep='-' setzt den Trenner zwischen den Argumenten auf '-', daher Ausgabe: a-b.",
+  "kategorie": "Ein- und Ausgabe",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was macht das Argument end='' in print('Hallo', end='')?",
+  "antworten": [
+    "Es fügt immer ein Leerzeichen an",
+    "Es verhindert den Zeilenumbruch am Ende",
+    "Es fügt zwei Zeilenumbrüche an",
+    "Es gibt einen Fehler aus"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "Standardmäßig fügt print einen Zeilenumbruch hinzu; end='' ersetzt diesen durch einen leeren String.",
+  "kategorie": "Ein- und Ausgabe",
+  "schwierigkeit": 2
+},
+{
+  "frage": "Was ist der Typ des Ausdrucks float(input('Gib eine Zahl ein: '))?",
+  "antworten": [
+    "str",
+    "int",
+    "float",
+    "bool"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "input() liefert einen String, der mit float(...) in eine Fließkommazahl umgewandelt wird.",
+  "kategorie": "Ein- und Ausgabe",
+  "schwierigkeit": 2
+},
+{
+  "frage": "Welches Problem kann bei Berechnungen mit Fließkommazahlen (float) auftreten?",
+  "antworten": [
+    "Sie können keine negativen Zahlen darstellen",
+    "Sie werden intern als Strings gespeichert",
+    "Bestimmte Dezimalwerte können nicht exakt dargestellt werden",
+    "Sie führen immer zu einem SyntaxError"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "Fließkommazahlen basieren auf binärer Darstellung, daher sind manche Dezimalzahlen nur näherungsweise speicherbar.",
+  "kategorie": "Datentypen",
+  "schwierigkeit": 2
+},
+{
+  "frage": "Welcher Aufruf wandelt die Zahl 3 korrekt in einen String um?",
+  "antworten": [
+    "string(3)",
+    "str(3)",
+    "int(3)",
+    "float(3)"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "str(3) liefert den String '3'.",
+  "kategorie": "Typkonvertierung",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welcher Code repräsentiert eine if-elif-else-Struktur in Python?",
+  "antworten": [
+    "if x > 0: ... elseif x == 0: ... else: ...",
+    "if x > 0: ... elif x == 0: ... else: ...",
+    "if x > 0: ... else if x == 0: ... else: ...",
+    "if x > 0 then ... elif x == 0 then ... else ..."
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "In Python verwendet man elif als Zwischenzweig: if ... elif ... else ....",
+  "kategorie": "Kontrollstrukturen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Wofür wird das Schlüsselwort pass typischerweise verwendet?",
+  "antworten": [
+    "Zum Abbrechen einer Schleife",
+    "Zum Fortsetzen zur nächsten Iteration",
+    "Als Platzhalter für noch nicht implementierten Code",
+    "Zum Importieren von Modulen"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "pass tut nichts und dient oft als Platzhalter für zukünftigen Code.",
+  "kategorie": "Kontrollstrukturen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was bewirkt das Schlüsselwort break in einer Schleife?",
+  "antworten": [
+    "Es überspringt die aktuelle Iteration",
+    "Es beendet die Schleife sofort",
+    "Es startet die Schleife neu",
+    "Es fügt eine zusätzliche Iteration hinzu"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "break beendet die umgebende Schleife sofort, auch wenn die Bedingung noch True ist.",
+  "kategorie": "Kontrollstrukturen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was bewirkt das Schlüsselwort continue in einer Schleife?",
+  "antworten": [
+    "Es beendet die Schleife sofort",
+    "Es überspringt den Rest des Schleifenkörpers und geht zur nächsten Iteration",
+    "Es setzt die Schleifenvariable auf 0",
+    "Es löst eine Exception aus"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "continue überspringt den Rest der aktuellen Iteration und fährt mit der nächsten fort.",
+  "kategorie": "Kontrollstrukturen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Wann wird der else-Block einer for-Schleife ausgeführt?",
+  "antworten": [
+    "Immer, nach jeder Schleifeniteration",
+    "Nur, wenn die Schleife mindestens einmal ausgeführt wurde",
+    "Nur, wenn die Schleife ohne break beendet wird",
+    "Nie, for-Schleifen haben keinen else-Block"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "Der else-Block einer for- oder while-Schleife wird nur ausgeführt, wenn die Schleife nicht durch break verlassen wurde.",
+  "kategorie": "Kontrollstrukturen",
+  "schwierigkeit": 2
+},
+{
+  "frage": "Welche Methode fügt ein Element ans Ende einer Liste an?",
+  "antworten": [
+    "append()",
+    "insert()",
+    "add()",
+    "push()"
+  ],
+  "antworten_richtig": 0,
+  "erklaerung": "list.append(x) fügt x ans Ende der Liste an.",
+  "kategorie": "Listen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was macht der Ausdruck del lst[1] bei lst = [10, 20, 30]?",
+  "antworten": [
+    "Er setzt lst[1] auf None",
+    "Er entfernt das Element an Index 1",
+    "Er löscht die gesamte Liste",
+    "Er gibt einen Fehler aus"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "del lst[1] entfernt das Element mit Index 1 aus der Liste, hier also 20.",
+  "kategorie": "Listen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was macht der Ausdruck del lst[1] bei lst = [10, 20, 30]?",
+  "antworten": [
+    "Er setzt lst[1] auf None",
+    "Er entfernt das Element an Index 1",
+    "Er löscht die gesamte Liste",
+    "Er gibt einen Fehler aus"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "del lst[1] entfernt das Element mit Index 1 aus der Liste, hier also 20.",
+  "kategorie": "Listen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was gibt der Ausdruck 2 in [1, 2, 3] zurück?",
+  "antworten": [
+    "True",
+    "False",
+    "2",
+    "Ein IndexError"
+  ],
+  "antworten_richtig": 0,
+  "erklaerung": "Der in-Operator prüft, ob ein Element in einer Sequenz enthalten ist; 2 ist in der Liste, daher True.",
+  "kategorie": "Listen",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welche Aussage über Tuples in Python ist korrekt?",
+  "antworten": [
+    "Tuples sind veränderbar (mutable)",
+    "Tuples werden mit geschweiften Klammern erstellt",
+    "Tuples sind unveränderbare (immutable) Sequenzen",
+    "Tuples können keine unterschiedlichen Datentypen enthalten"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "Tuples sind immutable, d.h. ihre Elemente können nach der Erstellung nicht verändert werden.",
+  "kategorie": "Tuples",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Wie erstellt man ein Tuple mit den Werten 1, 2 und 3?",
+  "antworten": [
+    "[1, 2, 3]",
+    "{1, 2, 3}",
+    "(1, 2, 3)",
+    "<1, 2, 3>"
+  ],
+  "antworten_richtig": 2,
+  "erklaerung": "Tuples werden mit runden Klammern definiert: (1, 2, 3).",
+  "kategorie": "Tuples",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Wie greift man auf den Wert zum Schlüssel 'name' in einem Dictionary d = {'name': 'Anna'} zu?",
+  "antworten": [
+    "d.name",
+    "d['name']",
+    "d(name)",
+    "d.get_key('name')"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "Dictionary-Einträge werden mit eckigen Klammern und dem Schlüssel angesprochen, z.B. d['name'].",
+  "kategorie": "Dictionaries",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welche Methode liefert alle Schlüssel eines Dictionaries d?",
+  "antworten": [
+    "d.keys()",
+    "d.items()",
+    "d.values()",
+    "d.get_keys()"
+  ],
+  "antworten_richtig": 0,
+  "erklaerung": "d.keys() gibt eine Ansicht (View) aller Schlüssel des Dictionaries zurück.",
+  "kategorie": "Dictionaries",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Wie prüft man, ob der Schlüssel 'id' in einem Dictionary d vorhanden ist?",
+  "antworten": [
+    "'id' in d",
+    "d.has('id')",
+    "d.contains('id')",
+    "d['id'] != None"
+  ],
+  "antworten_richtig": 0,
+  "erklaerung": "Mit 'id' in d wird geprüft, ob der Schlüssel im Dictionary vorhanden ist.",
+  "kategorie": "Dictionaries",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Welcher String-Literal ist korrekt, um ein Apostroph im Text darzustellen?",
+  "antworten": [
+    "'Python's'",
+    "\"Python's\"",
+    "\"Python\"s\"",
+    "'Python\\'s'"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "Mit doppelten Anführungszeichen kann ein Apostroph im String ohne Escape verwendet werden: \"Python's\".",
+  "kategorie": "Strings",
+  "schwierigkeit": 2
+},
+{
+  "frage": "Welche Escape-Sequenz erzeugt einen Zeilenumbruch in einem String?",
+  "antworten": [
+    "\\n",
+    "\\t",
+    "\\\\",
+    "\\r"
+  ],
+  "antworten_richtig": 0,
+  "erklaerung": "\\n steht für einen Zeilenumbruch (Newline) im String.",
+  "kategorie": "Strings",
+  "schwierigkeit": 1
+},
+{
+  "frage": "Was macht der Ausdruck 'python'.upper()?",
+  "antworten": [
+    "Er gibt 'python' unverändert zurück",
+    "Er gibt 'PYTHON' zurück",
+    "Er gibt 'Python' zurück",
+    "Er gibt einen Fehler aus"
+  ],
+  "antworten_richtig": 1,
+  "erklaerung": "upper() wandelt alle Buchstaben in Großbuchstaben um, also 'python' → 'PYTHON'.",
+  "kategorie": "Strings",
+  "schwierigkeit": 1
 }
 ]
