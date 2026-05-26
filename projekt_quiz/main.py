@@ -9,7 +9,7 @@ def hauptmenue() -> None:
     Zeigt das Hauptmenü an.
     """
     print("\n=== PCEP Quiz ===")
-    print("1. Quiz starten (alle Fragen)")
+    print("1. Quiz starten (ohne Filter)")
     print("2. Quiz nach Kategorie")
     print("3. Quiz nach Schwierigkeit")
     print("4. Meine Ergebnisse anzeigen")
