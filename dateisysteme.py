@@ -2,9 +2,9 @@
 ################
 
 # Alternativen zu read
-'''readgibt einen String mit der gesamten Datei zurück.
-   readline gibt die erste Zeile der Datei zurück. Beim zweiten Aufruf wird die zweite Zeile gelesen usw. Wenn es keine Zeile mehr zu lesen gibt, werden leere Zeilen zurückgegeben.
-   readlines gibt eine Liste mit den Zeilen der Datei zurück.
+'''read         gibt einen String mit der gesamten Datei zurück.
+   read line    gibt die erste Zeile der Datei zurück. Beim zweiten Aufruf wird die zweite Zeile gelesen usw. Wenn es keine Zeile mehr zu lesen gibt, werden leere Zeilen zurückgegeben.
+   read lines   gibt eine Liste mit den Zeilen der Datei zurück.
 '''
 
 # Fehler fangen
