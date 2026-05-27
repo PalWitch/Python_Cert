@@ -856,5 +856,213 @@
         "erklaerung": "upper() wandelt alle Buchstaben in Großbuchstaben um, also 'python' → 'PYTHON'.",
         "kategorie": "Collections & Strings",
         "schwierigkeit": 1
-    }
+    },
+    {
+    "frage": "Welcher Modus wird verwendet, um eine Datei nur zum Lesen zu öffnen?",
+    "antworten": [
+        "\"r\"",
+        "\"w\"",
+        "\"a\"",
+        "\"x\""
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "Der Modus \"r\" öffnet eine Datei nur zum Lesen. Die Datei muss bereits existieren.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Welcher Modus wird verwendet, um eine neue Datei zu erstellen oder eine bestehende Datei zu überschreiben?",
+    "antworten": [
+        "\"r\"",
+        "\"w\"",
+        "\"a\"",
+        "\"r+\""
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "Der Modus \"w\" erstellt eine neue Datei oder überschreibt eine bestehende Datei.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Welcher Modus hängt neuen Inhalt an das Ende einer bestehenden Datei an?",
+    "antworten": [
+        "\"r\"",
+        "\"w\"",
+        "\"a\"",
+        "\"w+\""
+    ],
+    "antworten_richtig": 2,
+    "erklaerung": "Der Modus \"a\" (append) schreibt immer ans Ende der Datei, ohne sie zu überschreiben.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Welchen Vorteil hat der with-Block beim Arbeiten mit Dateien?",
+    "antworten": [
+        "Die Datei wird automatisch geschlossen",
+        "Die Datei wird schneller gelesen",
+        "Man darf nur damit schreiben, nicht lesen",
+        "Er funktioniert nur unter Windows"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "with sorgt dafür, dass die Datei automatisch geschlossen wird, auch wenn ein Fehler auftritt.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Was macht der Aufruf f.read() bei einer geöffneten Textdatei?",
+    "antworten": [
+        "Liest eine Zeile",
+        "Liest die komplette Datei als String",
+        "Liest die Datei zeilenweise als Liste",
+        "Schreibt einen String in die Datei"
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "f.read() liest den gesamten Inhalt der Datei und gibt ihn als String zurück.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Welche Methode liest alle Zeilen einer Datei und gibt sie als Liste von Strings zurück?",
+    "antworten": [
+        "f.read()",
+        "f.readline()",
+        "f.readlines()",
+        "f.readall()"
+    ],
+    "antworten_richtig": 2,
+    "erklaerung": "f.readlines() liest alle Zeilen und gibt sie als Liste von Strings zurück.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Wie iterierst du korrekt Zeile für Zeile über eine geöffnete Datei f?",
+    "antworten": [
+        "for line in f.read():",
+        "for line in f.readlines():",
+        "for line in f:",
+        "for f in line:"
+    ],
+    "antworten_richtig": 2,
+    "erklaerung": "Dateiobjekte sind iterierbar, daher ist for line in f: der idiomatische Weg.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Was ist ein häufiger Fehler, wenn man beim Öffnen einer Datei den falschen Pfad angibt?",
+    "antworten": [
+        "TypeError",
+        "IndexError",
+        "FileNotFoundError",
+        "ZeroDivisionError"
+    ],
+    "antworten_richtig": 2,
+    "erklaerung": "Wenn die Datei unter dem angegebenen Pfad nicht existiert, wird FileNotFoundError ausgelöst.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Was ist der Unterschied zwischen \"w\" und \"w+\" als Dateimodus?",
+    "antworten": [
+        "\"w\" ist nur Lesen, \"w+\" nur Schreiben",
+        "\"w\" ist nur Schreiben, \"w+\" Lesen und Schreiben",
+        "\"w\" hängt an, \"w+\" überschreibt",
+        "Es gibt keinen Unterschied"
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "\"w\" öffnet zum Schreiben (überschreibt), \"w+\" öffnet zum Lesen und Schreiben (ebenfalls mit Überschreiben).",
+    "kategorie": "Dateien",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Warum ist es oft sinnvoll, beim Öffnen einer Textdatei explizit encoding=\"utf-8\" anzugeben?",
+    "antworten": [
+        "Sonst kann man die Datei nicht schreiben",
+        "Um sicherzustellen, dass Umlaute und Sonderzeichen korrekt verarbeitet werden",
+        "Weil Python sonst abstürzt",
+        "encoding ist nur für Binärdateien erlaubt"
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "Mit encoding=\"utf-8\" stellst du sicher, dass Zeichen wie ä, ö, ü korrekt gelesen und geschrieben werden.",
+    "kategorie": "Dateien",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Welches Modul wird in Python typischerweise zum Arbeiten mit JSON-Dateien verwendet?",
+    "antworten": [
+        "\"pickle\"",
+        "\"json\"",
+        "\"csv\"",
+        "\"os\""
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "Das eingebaute Modul json bietet Funktionen wie json.load, json.dump, json.loads und json.dumps für JSON-Daten.",
+    "kategorie": "Dateien & JSON",
+    "schwierigkeit": 1
+},
+{
+    "frage": "Welcher Code liest eine JSON-Datei korrekt in ein Python-Objekt ein?",
+    "antworten": [
+        "data = json.read(f)",
+        "data = json.load(f)",
+        "data = f.json()",
+        "data = json.open(f)"
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "json.load(f) liest den JSON-Inhalt aus einem geöffneten Dateiobjekt f und wandelt ihn in Python-Datentypen um.",
+    "kategorie": "Dateien & JSON",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Welcher Code schreibt ein Dictionary data als JSON in eine geöffnete Datei f?",
+    "antworten": [
+        "json.write(data, f)",
+        "f.write(json.load(data))",
+        "json.dump(data, f)",
+        "json.save(f, data)"
+    ],
+    "antworten_richtig": 2,
+    "erklaerung": "json.dump(data, f) serialisiert das Python-Objekt data und schreibt es im JSON-Format in die Datei f.",
+    "kategorie": "Dateien & JSON",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Wofür steht der Parameter indent in json.dump(..., indent=4)?",
+    "antworten": [
+        "Er begrenzt die Dateigröße auf 4 KB",
+        "Er gibt an, wie viele Leerzeichen pro Einrückungsstufe verwendet werden",
+        "Er bestimmt die maximale Tiefe der JSON-Struktur",
+        "Er aktiviert den Binärmodus beim Schreiben"
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "indent=4 sorgt für eine lesbare, eingerückte Ausgabe mit 4 Leerzeichen pro Ebene.",
+    "kategorie": "Dateien & JSON",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Welcher Code wandelt einen JSON-String s in ein Python-Objekt um?",
+    "antworten": [
+        "data = json.load(s)",
+        "data = json.loads(s)",
+        "data = s.json()",
+        "data = dict(s)"
+    ],
+    "antworten_richtig": 1,
+    "erklaerung": "json.loads(s) (load string) erwartet einen JSON-String und gibt das entsprechende Python-Objekt zurück.",
+    "kategorie": "Dateien & JSON",
+    "schwierigkeit": 2
+},
+{
+    "frage": "Welche Exception wird typischerweise ausgelöst, wenn der Inhalt einer Datei kein gültiges JSON ist?",
+    "antworten": [
+        "ValueError oder json.JSONDecodeError",
+        "FileNotFoundError",
+        "IndexError",
+        "ZeroDivisionError"
+    ],
+    "antworten_richtig": 0,
+    "erklaerung": "Beim Parsen von ungültigem JSON wird in modernen Python-Versionen json.JSONDecodeError ausgelöst, der von ValueError erbt.",
+    "kategorie": "Dateien & JSON",
+    "schwierigkeit": 3
+}
 ]
