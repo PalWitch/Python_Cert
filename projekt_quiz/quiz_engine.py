@@ -124,7 +124,7 @@ def quiz_nach_schwierigkeit(
         return
 
     print("\nStarte Quiz mit gefilterten Fragen nach Schwierigkeit.")
-    ergebnis = run_quiz(gefilterte_fragen)  # Tippfehler selbst korrigieren :)
+    ergebnis = run_quiz(gefilterte_fragen)  
     alle_ergebnisse.append(ergebnis)
     zeige_ergebnis(ergebnis)
 

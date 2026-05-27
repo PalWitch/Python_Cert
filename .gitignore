@@ -18,3 +18,14 @@ uebungen/python-exercise-lists-main/run_tests.sh
 uebungen/python-exercise-lists-main/src/main.py
 uebungen/.vscode/settings.json
 projekt_quiz/__pycache__/fragen_laden.cpython-313.pyc
+uebungen/python-exercise-files-main/tests/test_main.py
+uebungen/python-exercise-files-main/exercise.py
+uebungen/python-exercise-files-main/run_tests.bat
+uebungen/python-exercise-files-main/run_tests.sh
+uebungen/python-exercise-files-main/.vscode/settings.json
+uebungen/python-exercise-files-main/src/__init__.py
+.gitignore
+.gitignore
+.vscode/settings.json
+uebungen/python-exercise-files-main/src/mitarbeiter.csv
+uebungen/python-exercise-files-main/tests/__init__.py
