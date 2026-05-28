@@ -89,3 +89,46 @@ def gib_zurueck():
 
 global_var = gib_zurueck()
 print(global_var)
+
+
+
+
+# Zwei Varianten für ein Ergebnis
+'''Gemini'''
+def args_zu_dict(*args):
+    # Dictionaries benötigen Schlüssel-Wert-Paare.
+    # Wir erzeugen Tupel-Paare, indem wir args mit sich selbst um eins versetzt zippen.
+    # 'None' dient als Füllwert, falls die Länge ungerade ist.
+    return dict(zip(args[::2], list(args[1::2]) + [None]))
+'''
+args[::2]:      Extrahiert alle Elemente an geraden Positionen (d.h. Index 0, 2, 4...), die als Keys dienen sollen.
+args[1::2]:     Extrahiert alle Elemente an ungeraden Positionen (Index 1, 3, 5...), welche die Values bilden.
++ [None]:       Falls eine ungerade Anzahl an Parametern übergeben wird, ist das values-Tupel ein Element kürzer als das keys-Tupel. 
+                Das Anhängen von None gleicht dies aus, damit jeder Key sein Value (oder None) erhält.
+zip() & dict(): Führt die Schlüssel und Werte zusammen und konvertiert sie in das finale Dictionary.
+'''
+
+# Beispiele:
+print(args_zu_dict("Name", "Anna", "Alter")) 
+# {'Name': 'Anna', 'Alter': None}
+
+print(args_zu_dict("Name", "Anna", "Alter", 28)) 
+# {'Name': 'Anna', 'Alter': 28}
+
+'''Perplexity'''
+def args_to_dict(*args):
+    result = {}
+    # paarweise durchlaufen: key = args[0], args[2], ...; value = args[1], args[3], ...
+    for i in range(0, len(args), 2):
+        key = args[i]
+        # Falls kein passender Wert existiert, verwenden wir None
+        value = args[i + 1] if i + 1 < len(args) else None
+        result[key] = value
+    return result
+
+# Beispiele:
+print(args_to_dict("a", 1, "b", 2))
+# {'a': 1, 'b': 2}
+
+print(args_to_dict("name", "Nicky", "age"))
+# {'name': 'Nicky', 'age': None}
