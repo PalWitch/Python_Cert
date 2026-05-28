@@ -1,7 +1,7 @@
 '''
     Globale Variablen: Außerhalb von Funktionen definiert; im gesamten Code gültig.
     Lokale Variablen: Innerhalb von Funktionen definiert; nur in ihrer eigenen Funktion gültig.
-    Schattenbildung: Lokale Variablen können den gleichen Namen wie globale Variablen haben, aber sie sind separate Instanzen.
+    Shadowing: Lokale Variablen können den gleichen Namen wie globale Variablen haben, aber sie sind separate Instanzen.
 '''
 
 # Globale Variable
@@ -70,13 +70,18 @@ def test_schleife():
 test_schleife()
 
 # Funktionsargument Scope
+'''
+Beim Funktionsaufruf erhält der Parameter `arg` eine Referenz auf dasselbe Objekt wie das Argument `var`.
+Innerhalb der Funktion wird `arg` neu zugewiesen (`arg = "Geändert"`) und verweist dann auf ein neues Objekt.
+Die Variable `var` außerhalb der Funktion bleibt unverändert.
+'''
 def test_argument(arg):
-   arg = "Geändert"
-   print(arg)
+   arg = "Geändert"   
+   print(arg)         # Gibt "Geändert" aus
 
 var = "Original"
 test_argument(var)
-print(var)  # Bleibt "Original"
+print(var)            # Bleibt "Original"
 
 # Rückgabewerte und Scope
 def gib_zurueck():
