@@ -167,9 +167,61 @@ class Punkt:
         else:
             raise TypeError("Unsupported operand type. Use with another Punkt object.")
 
+# Multiplizieren von Rechts (fortsetzung)
+   
+    def __eq__(self, other):
+            return (isinstance(other, Punkt)
+                    and isclose(self.x, other.x)
+                    and isclose(self.y, other.y))
 
+    def __sub__(self, other):
+        return self + other * (-1)
 
+    def __mul__(self, other):
+        if isinstance(other, int | float):
+            return Punkt(self.x * other, self.y * other)
+        else:
+            raise TypeError("Unsupported operand type. Use int or float")
+    
+# Zugriff wie bei Listen (Fortsetzung)
+    def __getitem__(self, item):
+        if item in [0, -2]:
+            return self.x
+        elif item in [1, -1]:
+            return self.y
+        else:
+            raise IndexError("Index muss 0 für x oder 1 für y sein.")
 
+    def __setitem__(self, key, value):
+        if key in [0, -2]:
+            self.x = value
+        elif key in [1, -1]:
+            self.y = value
+        else:
+            raise IndexError("Index muss 0 für x oder 1 für y sein.")
 
+# Was ist nötig
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    def __lt__(self, other):
+        if isinstance(other, Person):
+            return self.age < other.age
+        if isinstance(other, int | float):
+            return self.age < other
+        raise TypeError(f"Comperator operation only allowed for Persons and float and int")
+
+    def __le__(self, other):
+        if isinstance(other, Person):
+            return self.age <= other.age
+        if isinstance(other, int | float):
+            return self.age <= other
+        raise TypeError(f"Comperator operation only allowed for Persons and float and int")
+
+    def __contains__(self, item):
+        if not isinstance(item, str):
+            raise TypeError(f"Item ist darf nicht vom Type {type(item)}, sondern muss vom Typ str sein.")
+        return item in self.name
 
