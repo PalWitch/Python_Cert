@@ -29,3 +29,4 @@ uebungen/python-exercise-files-main/src/__init__.py
 .vscode/settings.json
 uebungen/python-exercise-files-main/src/mitarbeiter.csv
 uebungen/python-exercise-files-main/tests/__init__.py
+__pycache__/oop.cpython-313.pyc
