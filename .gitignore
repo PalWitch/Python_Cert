@@ -30,3 +30,7 @@ uebungen/python-exercise-files-main/src/__init__.py
 uebungen/python-exercise-files-main/src/mitarbeiter.csv
 uebungen/python-exercise-files-main/tests/__init__.py
 __pycache__/oop.cpython-313.pyc
+__pycache__/oop_test.cpython-313.pyc
+oop_test2.py
+oop2_test.py
+__pycache__/oop2_test.cpython-313.pyc

@@ -139,6 +139,34 @@ class Parallelogramm(Viereck):
 
     def inhalt(self):
         return self.size_a * self.size_b
+    
+
+# Punkte
+class Punkt:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
+    def __add__(self, other):
+        if isinstance(other, Punkt):
+            return Punkt(self.x + other.x, self.y + other.y)
+        else:
+            raise TypeError("Unsupported operand type. Use with another Punkt object.")
+
+    def __eq__(self, other):
+        return (isinstance(other, Punkt)
+                and self.x == other.x
+                and self.y == other.y)
+
+    def __sub__(self, other):
+        if isinstance(other, Punkt):
+            return Punkt(self.x - other.x, self.y - other.y)
+        else:
+            raise TypeError("Unsupported operand type. Use with another Punkt object.")
+
 
 
 
