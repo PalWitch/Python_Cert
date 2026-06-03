@@ -222,6 +222,6 @@ class Person:
 
     def __contains__(self, item):
         if not isinstance(item, str):
-            raise TypeError(f"Item ist darf nicht vom Type {type(item)}, sondern muss vom Typ str sein.")
+            raise TypeError(f"Item darf nicht vom Type {type(item)}, sondern muss vom Typ str sein.")
         return item in self.name
 
