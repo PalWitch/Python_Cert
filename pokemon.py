@@ -50,7 +50,7 @@ class Pikachu(Pokemon):
             [
                 Angriff("Donnerschock", 18, 7),
                 Angriff("Ruckzuckhieb", 12, 4),
-                Angriff("Volt Tackle", 20, 10),
+                Angriff("Volt Tackle", 20, 8),
                 Angriff("Knurren", 8, 2)
             ]
         )
@@ -64,11 +64,12 @@ class Glumanda(Pokemon):
             50,
             [
                 Angriff("Glut", 16, 6),
-                Angriff("Kratzer", 10, 4),
-                Angriff("Flammenwurf", 20, 10),
+                Angriff("Kratzer", 10, 3),
+                Angriff("Flammenwurf", 20, 8),
                 Angriff("Biss", 14, 5)
             ]
         )
+
 
 class Schiggy(Pokemon):
     def __init__(self):
@@ -78,7 +79,7 @@ class Schiggy(Pokemon):
             50,
             [
                 Angriff("Aquaknarre", 17, 7),
-                Angriff("Tackle", 10, 4),
+                Angriff("Tackle", 10, 3),
                 Angriff("Blubber", 13, 5),
                 Angriff("Kopfnuss", 15, 6)
             ]
@@ -93,8 +94,8 @@ class Bisasam(Pokemon):
             50,
             [
                 Angriff("Rankenhieb", 16, 6),
-                Angriff("Tackle", 10, 4),
-                Angriff("Rasierblatt", 20, 10),
+                Angriff("Tackle", 10, 3),
+                Angriff("Rasierblatt", 20, 8),
                 Angriff("Samenbomben", 18, 7)
             ]
         )
