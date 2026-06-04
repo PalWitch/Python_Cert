@@ -45,13 +45,13 @@ class Matchu(Monties):
     def __init__(self):
         super().__init__(
             "Matchu",
-            100,
-            50,
+            110,
+            45,
             [
-                Angriff("Donner", 18, 7),
-                Angriff("Hieb", 12, 4),
-                Angriff("Voltschlag", 20, 8),
-                Angriff("Knurren", 8, 2)
+                Angriff("Donner", 18, 9),
+                Angriff("Hieb", 12, 6),
+                Angriff("Voltschlag", 20, 10),
+                Angriff("Knurren", 8, 4)
             ]
         )
 
@@ -60,13 +60,13 @@ class Feurina(Monties):
     def __init__(self):
         super().__init__(
             "Feurina",
-            95,
-            50,
+            100,
+            45,
             [
-                Angriff("Glut", 16, 6),
-                Angriff("Kratzer", 10, 3),
-                Angriff("Flammenwurf", 20, 8),
-                Angriff("Biss", 14, 5)
+                Angriff("Glut", 16, 8),
+                Angriff("Kratzer", 8, 5),
+                Angriff("Flammenwurf", 20, 10),
+                Angriff("Biss", 14, 7)
             ]
         )
 
@@ -76,12 +76,12 @@ class Aprilia(Monties):
         super().__init__(
             "Aprilia",
             110,
-            50,
+            45,
             [
-                Angriff("Wassercolt", 17, 7),
-                Angriff("Rempler", 10, 3),
-                Angriff("Blubstrahl", 13, 5),
-                Angriff("Kopfnuss", 15, 6)
+                Angriff("Wassercolt", 17, 9),
+                Angriff("Rempler", 10, 5),
+                Angriff("Blubstrahl", 13, 7),
+                Angriff("Kopfnuss", 15, 8)
             ]
         )
 
@@ -91,7 +91,7 @@ class Florus(Monties):
         super().__init__(
             "Florus",
             105,
-            50,
+            45,
             [
                 Angriff("Wurzelschlag", 16, 6),
                 Angriff("Rempler", 10, 3),
