@@ -11,7 +11,7 @@ class Angriff:
         return f"{self.name} ({self.schaden} Schaden, {self.kosten} AP)"
 
 
-class Pokemon:
+class Monties:
     def __init__(self, name, kp, ap, angriffe):
         self.name = name
         self.kp = kp
@@ -41,25 +41,25 @@ class Pokemon:
         )
 
 
-class Pikachu(Pokemon):
+class Matchu(Monties):
     def __init__(self):
         super().__init__(
-            "Pikachu",
+            "Matchu",
             100,
             50,
             [
-                Angriff("Donnerschock", 18, 7),
-                Angriff("Ruckzuckhieb", 12, 4),
-                Angriff("Volt Tackle", 20, 8),
+                Angriff("Donner", 18, 7),
+                Angriff("Hieb", 12, 4),
+                Angriff("Voltschlag", 20, 8),
                 Angriff("Knurren", 8, 2)
             ]
         )
 
 
-class Glumanda(Pokemon):
+class Feurina(Monties):
     def __init__(self):
         super().__init__(
-            "Glumanda",
+            "Feurina",
             95,
             50,
             [
@@ -71,40 +71,40 @@ class Glumanda(Pokemon):
         )
 
 
-class Schiggy(Pokemon):
+class Aprilia(Monties):
     def __init__(self):
         super().__init__(
-            "Schiggy",
+            "Aprilia",
             110,
             50,
             [
-                Angriff("Aquaknarre", 17, 7),
-                Angriff("Tackle", 10, 3),
-                Angriff("Blubber", 13, 5),
+                Angriff("Wassercolt", 17, 7),
+                Angriff("Rempler", 10, 3),
+                Angriff("Blubstrahl", 13, 5),
                 Angriff("Kopfnuss", 15, 6)
             ]
         )
 
 
-class Bisasam(Pokemon):
+class Florus(Monties):
     def __init__(self):
         super().__init__(
-            "Bisasam",
+            "Florus",
             105,
             50,
             [
-                Angriff("Rankenhieb", 16, 6),
-                Angriff("Tackle", 10, 3),
-                Angriff("Rasierblatt", 20, 8),
-                Angriff("Samenbomben", 18, 7)
+                Angriff("Wurzelschlag", 16, 6),
+                Angriff("Rempler", 10, 3),
+                Angriff("Schneidblatt", 20, 8),
+                Angriff("Saat", 18, 7)
             ]
         )
 
 
 class GameState:
-    def __init__(self, pokemon_pool):
-        self.spieler_pkm = random.choice(pokemon_pool)()
-        self.gegner_pkm = random.choice(pokemon_pool)()
+    def __init__(self, monties_pool):
+        self.spieler_pkm = random.choice(monties_pool)()
+        self.gegner_pkm = random.choice(monties_pool)()
         self.aktiver_spieler = "spieler"
 
     def status_anzeigen(self):
@@ -207,7 +207,7 @@ class GameState:
                 self.aktiver_spieler = "spieler"
 
 
-pokemon_pool = [Pikachu, Glumanda, Schiggy, Bisasam]
+monties_pool = [Matchu, Feurina, Aprilia, Florus]
 
-spiel = GameState(pokemon_pool)
+spiel = GameState(monties_pool)
 spiel.spielen()
