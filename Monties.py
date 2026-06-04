@@ -169,7 +169,7 @@ class GameState:
         )
 
     def ende_bei_ap_sackgasse(self):
-        print("\nBeide Pokemon haben keine AP mehr für Angriffe!")
+        print("\nBeide Monties haben keine AP mehr für Angriffe!")
 
         if self.spieler_pkm.kp > self.gegner_pkm.kp:
             print("Du gewinnst nach verbleibenden KP!")
@@ -180,8 +180,8 @@ class GameState:
 
     def spielen(self):
         print("Das Spiel startet!")
-        print(f"Spieler-Pokemon: {self.spieler_pkm.name}")
-        print(f"Gegner-Pokemon: {self.gegner_pkm.name}")
+        print(f"Spieler-Montie: {self.spieler_pkm.name}")
+        print(f"Gegner-Montie: {self.gegner_pkm.name}")
 
         while True:
             self.status_anzeigen()
