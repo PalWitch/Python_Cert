@@ -12,7 +12,7 @@ def erstelle_laender_objekte(laender_dict: dict):
 
     for land in laender_dict:
         cca3 = land["cca3"]
-        name = land["translations"]["deu"]["official"]
+        name = land["translations"]["deu"]["common"]
         hauptstadt = ", ".join(land.get("capital", [])) or "Keine Angabe"
         grenzen = ", ".join(land.get("borders", [])) or "keine"
         sprache = ", ".join(land.get("languages", {}).values()) or "Keine Angabe"
