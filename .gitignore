@@ -45,3 +45,509 @@ __pycache__/oop6_test.cpython-313.pyc
 Pokemon.drawio
 .$Pokemon.drawio.bkp
 Monties.drawio
+app.log
+flaggen_raten/laender.json
+flaggen_raten/src/assets/Åland-Inseln.png
+flaggen_raten/src/assets/Amerikanisch-Samoa.png
+flaggen_raten/src/assets/Amerikanische Jungferninseln.png
+flaggen_raten/src/assets/Anguilla.png
+flaggen_raten/src/assets/Antarktika.png
+flaggen_raten/src/assets/Antigua und Barbuda.png
+flaggen_raten/src/assets/Arabische Republik Ägypten.png
+flaggen_raten/src/assets/Arabische Republik Syrien.png
+flaggen_raten/src/assets/Argentinische Republik.png
+flaggen_raten/src/assets/Aruba.png
+flaggen_raten/src/assets/Barbados.png
+flaggen_raten/src/assets/Belize.png
+flaggen_raten/src/assets/Bermuda.png
+flaggen_raten/src/assets/Bolivarische Republik Venezuela.png
+flaggen_raten/src/assets/Bonaire, Sint Eustatius und Saba.png
+flaggen_raten/src/assets/Bosnien und Herzegowina.png
+flaggen_raten/src/assets/Bouvetinsel.png
+flaggen_raten/src/assets/Britisches Territorium im Indischen Ozean.png
+flaggen_raten/src/assets/Bundesrepublik Deutschland.png
+flaggen_raten/src/assets/Bundesrepublik Nigeria.png
+flaggen_raten/src/assets/Bundesrepublik Somalia.png
+flaggen_raten/src/assets/Burkina Faso.png
+flaggen_raten/src/assets/Cayman-Inseln.png
+flaggen_raten/src/assets/Commonwealth Australien.png
+flaggen_raten/src/assets/Commonwealth der Bahamas.png
+flaggen_raten/src/assets/Commonwealth der Nördlichen Marianen.png
+flaggen_raten/src/assets/Commonwealth von Dominica.png
+flaggen_raten/src/assets/Cookinseln.png
+flaggen_raten/src/assets/Demokratische Arabische Republik Sahara.png
+flaggen_raten/src/assets/Demokratische Bundesrepublik Äthiopien.png
+flaggen_raten/src/assets/Demokratische Bundesrepublik Nepal.png
+flaggen_raten/src/assets/Demokratische Republik Kongo.png
+flaggen_raten/src/assets/Demokratische Republik São Tomé und Príncipe.png
+flaggen_raten/src/assets/Demokratische Republik Timor-Leste.png
+flaggen_raten/src/assets/Demokratische Sozialistische Republik Sri Lanka.png
+flaggen_raten/src/assets/Demokratische Volksrepublik Algerien.png
+flaggen_raten/src/assets/Demokratische Volksrepublik Korea.png
+flaggen_raten/src/assets/Demokratische Volksrepublik Laos.png
+flaggen_raten/src/assets/Dominikanische Republik.png
+flaggen_raten/src/assets/Falklandinseln.png
+flaggen_raten/src/assets/Färöer.png
+flaggen_raten/src/assets/Föderation von St. Kitts und Nevis.png
+flaggen_raten/src/assets/Föderative Republik Brasilien.png
+flaggen_raten/src/assets/Föderierte Staaten von Mikronesien.png
+flaggen_raten/src/assets/Französisch-Guayana.png
+flaggen_raten/src/assets/Französisch-Polynesien.png
+flaggen_raten/src/assets/Französische Republik.png
+flaggen_raten/src/assets/Freistaat Puerto Rico.png
+flaggen_raten/src/assets/Fürstentum Andorra.png
+flaggen_raten/src/assets/Fürstentum Liechtenstein.png
+flaggen_raten/src/assets/Fürstentum Monaco.png
+flaggen_raten/src/assets/Gabunische Republik.png
+flaggen_raten/src/assets/Gebiet der Französisch Süd- und Antarktisgebiete.png
+flaggen_raten/src/assets/Gebiet der Kokos- (Keeling-) Inseln.png
+flaggen_raten/src/assets/Gebiet der Norfolkinsel.png
+flaggen_raten/src/assets/Gebiet der Wallis und Futuna.png
+flaggen_raten/src/assets/Gebiet der Weihnachtsinsel.png
+flaggen_raten/src/assets/Gebietskörperschaft Saint-Barthélemy.png
+flaggen_raten/src/assets/Georgien.png
+flaggen_raten/src/assets/Gibraltar.png
+flaggen_raten/src/assets/Grenada.png
+flaggen_raten/src/assets/Grönland.png
+flaggen_raten/src/assets/Großherzogtum Luxemburg,.png
+flaggen_raten/src/assets/Guadeloupe.png
+flaggen_raten/src/assets/Guam.png
+flaggen_raten/src/assets/Haschemitisches Königreich Jordanien.png
+flaggen_raten/src/assets/Heard und McDonaldinseln.png
+flaggen_raten/src/assets/Hellenische Republik.png
+flaggen_raten/src/assets/icon.png
+flaggen_raten/src/assets/Islamische Republik Iran.png
+flaggen_raten/src/assets/Islamische Republik Mauretanien.png
+flaggen_raten/src/assets/Islamische Republik Pakistan.png
+flaggen_raten/src/assets/Island.png
+flaggen_raten/src/assets/Isle of Man.png
+flaggen_raten/src/assets/Italienische Republik.png
+flaggen_raten/src/assets/Jamaika.png
+flaggen_raten/src/assets/Japan.png
+flaggen_raten/src/assets/Jungferninseln.png
+flaggen_raten/src/assets/Kanada.png
+flaggen_raten/src/assets/Kirgisische Republik.png
+flaggen_raten/src/assets/Königreich Bahrain.png
+flaggen_raten/src/assets/Königreich Belgien.png
+flaggen_raten/src/assets/Königreich Bhutan.png
+flaggen_raten/src/assets/Königreich Dänemark.png
+flaggen_raten/src/assets/Königreich Eswatini.png
+flaggen_raten/src/assets/Königreich Kambodscha.png
+flaggen_raten/src/assets/Königreich Lesotho.png
+flaggen_raten/src/assets/Königreich Marokko.png
+flaggen_raten/src/assets/Königreich Norwegen.png
+flaggen_raten/src/assets/Königreich Saudi-Arabien.png
+flaggen_raten/src/assets/Königreich Schweden.png
+flaggen_raten/src/assets/Königreich Spanien.png
+flaggen_raten/src/assets/Königreich Thailand.png
+flaggen_raten/src/assets/Königreich Tonga.png
+flaggen_raten/src/assets/Kooperative Republik Guyana.png
+flaggen_raten/src/assets/Land Curaçao.png
+flaggen_raten/src/assets/Libanesische Republik.png
+flaggen_raten/src/assets/Malaysia.png
+flaggen_raten/src/assets/Martinique.png
+flaggen_raten/src/assets/Mongolei.png
+flaggen_raten/src/assets/Montenegro.png
+flaggen_raten/src/assets/Montserrat.png
+flaggen_raten/src/assets/Neukaledonien.png
+flaggen_raten/src/assets/Neuseeland.png
+flaggen_raten/src/assets/Niederlande.png
+flaggen_raten/src/assets/Niue.png
+flaggen_raten/src/assets/Pitcairninseln.png
+flaggen_raten/src/assets/Plurinationaler Staat Bolivien.png
+flaggen_raten/src/assets/Portugiesische Republik.png
+flaggen_raten/src/assets/Republik Albanien.png
+flaggen_raten/src/assets/Republik Angola.png
+flaggen_raten/src/assets/Republik Äquatorialguinea.png
+flaggen_raten/src/assets/Republik Armenien.png
+flaggen_raten/src/assets/Republik Aserbaidschan.png
+flaggen_raten/src/assets/Republik Belarus.png
+flaggen_raten/src/assets/Republik Benin.png
+flaggen_raten/src/assets/Republik Botsuana.png
+flaggen_raten/src/assets/Republik Bulgarien.png
+flaggen_raten/src/assets/Republik Burundi.png
+flaggen_raten/src/assets/Republik Cabo Verde.png
+flaggen_raten/src/assets/Republik Chile.png
+flaggen_raten/src/assets/Republik China (Taiwan).png
+flaggen_raten/src/assets/Republik Costa Rica.png
+flaggen_raten/src/assets/Republik Côte d'Ivoire.png
+flaggen_raten/src/assets/Republik der Philippinen.png
+flaggen_raten/src/assets/Republik der Seychellen.png
+flaggen_raten/src/assets/Republik der Union Myanmar.png
+flaggen_raten/src/assets/Republik Dschibuti.png
+flaggen_raten/src/assets/Republik Ecuador.png
+flaggen_raten/src/assets/Republik El Salvador.png
+flaggen_raten/src/assets/Republik Estland.png
+flaggen_raten/src/assets/Republik Fidschi.png
+flaggen_raten/src/assets/Republik Finnland.png
+flaggen_raten/src/assets/Republik Gambia.png
+flaggen_raten/src/assets/Republik Ghana.png
+flaggen_raten/src/assets/Republik Guatemala.png
+flaggen_raten/src/assets/Republik Guinea-Bissau.png
+flaggen_raten/src/assets/Republik Guinea.png
+flaggen_raten/src/assets/Republik Haiti.png
+flaggen_raten/src/assets/Republik Honduras.png
+flaggen_raten/src/assets/Republik Indien.png
+flaggen_raten/src/assets/Republik Indonesien.png
+flaggen_raten/src/assets/Republik Irak.png
+flaggen_raten/src/assets/Republik Irland.png
+flaggen_raten/src/assets/Republik Jemen.png
+flaggen_raten/src/assets/Republik Kamerun.png
+flaggen_raten/src/assets/Republik Kasachstan.png
+flaggen_raten/src/assets/Republik Kenia.png
+flaggen_raten/src/assets/Republik Kiribati.png
+flaggen_raten/src/assets/Republik Kolumbien.png
+flaggen_raten/src/assets/Republik Kongo.png
+flaggen_raten/src/assets/Republik Korea.png
+flaggen_raten/src/assets/Republik Kosovo.png
+flaggen_raten/src/assets/Republik Kroatien.png
+flaggen_raten/src/assets/Republik Kuba.png
+flaggen_raten/src/assets/Republik Lettland.png
+flaggen_raten/src/assets/Republik Liberia.png
+flaggen_raten/src/assets/Republik Litauen.png
+flaggen_raten/src/assets/Republik Madagaskar.png
+flaggen_raten/src/assets/Republik Malawi.png
+flaggen_raten/src/assets/Republik Malediven.png
+flaggen_raten/src/assets/Republik Mali.png
+flaggen_raten/src/assets/Republik Malta.png
+flaggen_raten/src/assets/Republik Marshallinseln.png
+flaggen_raten/src/assets/Republik Mauritius.png
+flaggen_raten/src/assets/Republik Moldau.png
+flaggen_raten/src/assets/Republik Mosambik.png
+flaggen_raten/src/assets/Republik Namibia.png
+flaggen_raten/src/assets/Republik Nauru.png
+flaggen_raten/src/assets/Republik Nicaragua.png
+flaggen_raten/src/assets/Republik Niger.png
+flaggen_raten/src/assets/Republik Nordmazedonien.png
+flaggen_raten/src/assets/Republik Österreich.png
+flaggen_raten/src/assets/Republik Östlich des Uruguay.png
+flaggen_raten/src/assets/Republik Palau.png
+flaggen_raten/src/assets/Republik Panama.png
+flaggen_raten/src/assets/Republik Paraguay.png
+flaggen_raten/src/assets/Republik Peru.png
+flaggen_raten/src/assets/Republik Polen.png
+flaggen_raten/src/assets/Republik Ruanda.png
+flaggen_raten/src/assets/Republik Sambia.png
+flaggen_raten/src/assets/Republik San Marino.png
+flaggen_raten/src/assets/Republik Senegal.png
+flaggen_raten/src/assets/Republik Serbien.png
+flaggen_raten/src/assets/Republik Sierra Leone.png
+flaggen_raten/src/assets/Republik Simbabwe.png
+flaggen_raten/src/assets/Republik Singapur.png
+flaggen_raten/src/assets/Republik Slowenien.png
+flaggen_raten/src/assets/Republik Südafrika.png
+flaggen_raten/src/assets/Republik Sudan.png
+flaggen_raten/src/assets/Republik Südsudan.png
+flaggen_raten/src/assets/Republik Suriname.png
+flaggen_raten/src/assets/Republik Tadschikistan.png
+flaggen_raten/src/assets/Republik Togo.png
+flaggen_raten/src/assets/Republik Trinidad und Tobago.png
+flaggen_raten/src/assets/Republik Tschad.png
+flaggen_raten/src/assets/Republik Türkei.png
+flaggen_raten/src/assets/Republik Uganda.png
+flaggen_raten/src/assets/Republik Usbekistan.png
+flaggen_raten/src/assets/Republik Zypern.png
+flaggen_raten/src/assets/Réunion.png
+flaggen_raten/src/assets/Rumänien.png
+flaggen_raten/src/assets/Russische Föderation.png
+flaggen_raten/src/assets/Saint-Martin.png
+flaggen_raten/src/assets/Salomonen.png
+flaggen_raten/src/assets/Sankt Helena, Ascension und Tristan da Cunha.png
+flaggen_raten/src/assets/Schweizerische Eidgenossenschaft.png
+flaggen_raten/src/assets/Sint Maarten.png
+flaggen_raten/src/assets/Slowakische Republik.png
+flaggen_raten/src/assets/Sonderverwaltungsregion Macau der Volksrepublik China.png
+flaggen_raten/src/assets/Sonderverwaltungszone Hongkong der Volksrepublik China.png
+flaggen_raten/src/assets/Sozialistische Republik Vietnam.png
+flaggen_raten/src/assets/Spitzbergen und Jan Mayen.png
+flaggen_raten/src/assets/splash_android.png
+flaggen_raten/src/assets/St. Lucia.png
+flaggen_raten/src/assets/St. Pierre und Miquelon.png
+flaggen_raten/src/assets/St. Vincent und die Grenadinen.png
+flaggen_raten/src/assets/Staat Eritrea.png
+flaggen_raten/src/assets/Staat Israel.png
+flaggen_raten/src/assets/Staat Katar.png
+flaggen_raten/src/assets/Staat Kuwait.png
+flaggen_raten/src/assets/Staat Libyen.png
+flaggen_raten/src/assets/Staat Palästina.png
+flaggen_raten/src/assets/Staat Vatikanstadt.png
+flaggen_raten/src/assets/Südgeorgien und die Südlichen Sandwichinseln.png
+flaggen_raten/src/assets/Sultanat Brunei Darussalam.png
+flaggen_raten/src/assets/Sultanat Oman.png
+flaggen_raten/src/assets/Tokelau.png
+flaggen_raten/src/assets/Tschechische Republik.png
+flaggen_raten/src/assets/Tunesische Republik.png
+flaggen_raten/src/assets/Turkmenistan.png
+flaggen_raten/src/assets/Turks und Caicos Inseln.png
+flaggen_raten/src/assets/Tuvalu.png
+flaggen_raten/src/assets/Übersee-Département Mayotte.png
+flaggen_raten/src/assets/Ukraine.png
+flaggen_raten/src/assets/Unabhängige Staat Samoa.png
+flaggen_raten/src/assets/Unabhängiger Staat Papua-Neuguinea.png
+flaggen_raten/src/assets/Ungarn.png
+flaggen_raten/src/assets/Union der Komoren.png
+flaggen_raten/src/assets/USA, kleinere ausgelagerte Inseln.png
+flaggen_raten/src/assets/Vanuatu.png
+flaggen_raten/src/assets/Vereinigte Arabische Emirate.png
+flaggen_raten/src/assets/Vereinigte Mexikanische Staaten.png
+flaggen_raten/src/assets/Vereinigte Republik Tansania.png
+flaggen_raten/src/assets/Vereinigte Staaten von Amerika.png
+flaggen_raten/src/assets/Vereinigtes Königreich Großbritannien und Nordirland.png
+flaggen_raten/src/assets/Vogtei Guernsey.png
+flaggen_raten/src/assets/Vogtei Jersey.png
+flaggen_raten/src/assets/Volksrepublik Bangladesch.png
+flaggen_raten/src/assets/Volksrepublik China.png
+flaggen_raten/src/assets/Zentralafrikanische Republik.png
+flaggen_raten/pyproject.toml
+__pycache__/customer.cpython-313.pyc
+__pycache__/exceptionscustomer.cpython-313.pyc
+flaggen_raten/requirements.txt
+flaggen_raten/src/assets/ABW.png
+flaggen_raten/src/assets/AGO.png
+flaggen_raten/src/assets/AIA.png
+flaggen_raten/src/assets/ALA.png
+flaggen_raten/src/assets/ALB.png
+flaggen_raten/src/assets/AND.png
+flaggen_raten/src/assets/ARE.png
+flaggen_raten/src/assets/ARG.png
+flaggen_raten/src/assets/ARM.png
+flaggen_raten/src/assets/ASM.png
+flaggen_raten/src/assets/ATA.png
+flaggen_raten/src/assets/ATF.png
+flaggen_raten/src/assets/ATG.png
+flaggen_raten/src/assets/AUS.png
+flaggen_raten/src/assets/AUT.png
+flaggen_raten/src/assets/AZE.png
+flaggen_raten/src/assets/BDI.png
+flaggen_raten/src/assets/BEL.png
+flaggen_raten/src/assets/BEN.png
+flaggen_raten/src/assets/BES.png
+flaggen_raten/src/assets/BFA.png
+flaggen_raten/src/assets/BGD.png
+flaggen_raten/src/assets/BGR.png
+flaggen_raten/src/assets/BHR.png
+flaggen_raten/src/assets/BHS.png
+flaggen_raten/src/assets/BIH.png
+flaggen_raten/src/assets/BLM.png
+flaggen_raten/src/assets/BLR.png
+flaggen_raten/src/assets/BLZ.png
+flaggen_raten/src/assets/BMU.png
+flaggen_raten/src/assets/BOL.png
+flaggen_raten/src/assets/BRA.png
+flaggen_raten/src/assets/BRB.png
+flaggen_raten/src/assets/BRN.png
+flaggen_raten/src/assets/BTN.png
+flaggen_raten/src/assets/BVT.png
+flaggen_raten/src/assets/BWA.png
+flaggen_raten/src/assets/CAF.png
+flaggen_raten/src/assets/CAN.png
+flaggen_raten/src/assets/CCK.png
+flaggen_raten/src/assets/CHE.png
+flaggen_raten/src/assets/CHL.png
+flaggen_raten/src/assets/CHN.png
+flaggen_raten/src/assets/CIV.png
+flaggen_raten/src/assets/CMR.png
+flaggen_raten/src/assets/COD.png
+flaggen_raten/src/assets/COG.png
+flaggen_raten/src/assets/COK.png
+flaggen_raten/src/assets/COL.png
+flaggen_raten/src/assets/COM.png
+flaggen_raten/src/assets/CPV.png
+flaggen_raten/src/assets/CRI.png
+flaggen_raten/src/assets/CUB.png
+flaggen_raten/src/assets/CUW.png
+flaggen_raten/src/assets/CXR.png
+flaggen_raten/src/assets/CYM.png
+flaggen_raten/src/assets/CYP.png
+flaggen_raten/src/assets/CZE.png
+flaggen_raten/src/assets/DEU.png
+flaggen_raten/src/assets/DJI.png
+flaggen_raten/src/assets/DMA.png
+flaggen_raten/src/assets/DNK.png
+flaggen_raten/src/assets/DOM.png
+flaggen_raten/src/assets/DZA.png
+flaggen_raten/src/assets/ECU.png
+flaggen_raten/src/assets/EGY.png
+flaggen_raten/src/assets/ERI.png
+flaggen_raten/src/assets/ESH.png
+flaggen_raten/src/assets/ESP.png
+flaggen_raten/src/assets/EST.png
+flaggen_raten/src/assets/ETH.png
+flaggen_raten/src/assets/FIN.png
+flaggen_raten/src/assets/FJI.png
+flaggen_raten/src/assets/FLK.png
+flaggen_raten/src/assets/FRA.png
+flaggen_raten/src/assets/FRO.png
+flaggen_raten/src/assets/FSM.png
+flaggen_raten/src/assets/GAB.png
+flaggen_raten/src/assets/GBR.png
+flaggen_raten/src/assets/GEO.png
+flaggen_raten/src/assets/GGY.png
+flaggen_raten/src/assets/GHA.png
+flaggen_raten/src/assets/GIB.png
+flaggen_raten/src/assets/GIN.png
+flaggen_raten/src/assets/GLP.png
+flaggen_raten/src/assets/GMB.png
+flaggen_raten/src/assets/GNB.png
+flaggen_raten/src/assets/GNQ.png
+flaggen_raten/src/assets/GRC.png
+flaggen_raten/src/assets/GRD.png
+flaggen_raten/src/assets/GRL.png
+flaggen_raten/src/assets/GTM.png
+flaggen_raten/src/assets/GUF.png
+flaggen_raten/src/assets/GUM.png
+flaggen_raten/src/assets/GUY.png
+flaggen_raten/src/assets/HKG.png
+flaggen_raten/src/assets/HMD.png
+flaggen_raten/src/assets/HND.png
+flaggen_raten/src/assets/HRV.png
+flaggen_raten/src/assets/HTI.png
+flaggen_raten/src/assets/HUN.png
+flaggen_raten/src/assets/IDN.png
+flaggen_raten/src/assets/IMN.png
+flaggen_raten/src/assets/IND.png
+flaggen_raten/src/assets/IOT.png
+flaggen_raten/src/assets/IRL.png
+flaggen_raten/src/assets/IRN.png
+flaggen_raten/src/assets/IRQ.png
+flaggen_raten/src/assets/ISL.png
+flaggen_raten/src/assets/ISR.png
+flaggen_raten/src/assets/ITA.png
+flaggen_raten/src/assets/JAM.png
+flaggen_raten/src/assets/JEY.png
+flaggen_raten/src/assets/JOR.png
+flaggen_raten/src/assets/JPN.png
+flaggen_raten/src/assets/KAZ.png
+flaggen_raten/src/assets/KEN.png
+flaggen_raten/src/assets/KGZ.png
+flaggen_raten/src/assets/KHM.png
+flaggen_raten/src/assets/KIR.png
+flaggen_raten/src/assets/KNA.png
+flaggen_raten/src/assets/KOR.png
+flaggen_raten/src/assets/KWT.png
+flaggen_raten/src/assets/LAO.png
+flaggen_raten/src/assets/LBN.png
+flaggen_raten/src/assets/LBR.png
+flaggen_raten/src/assets/LBY.png
+flaggen_raten/src/assets/LCA.png
+flaggen_raten/src/assets/LIE.png
+flaggen_raten/src/assets/LKA.png
+flaggen_raten/src/assets/LSO.png
+flaggen_raten/src/assets/LTU.png
+flaggen_raten/src/assets/LUX.png
+flaggen_raten/src/assets/LVA.png
+flaggen_raten/src/assets/MAC.png
+flaggen_raten/src/assets/MAF.png
+flaggen_raten/src/assets/MAR.png
+flaggen_raten/src/assets/MCO.png
+flaggen_raten/src/assets/MDA.png
+flaggen_raten/src/assets/MDG.png
+flaggen_raten/src/assets/MDV.png
+flaggen_raten/src/assets/MEX.png
+flaggen_raten/src/assets/MHL.png
+flaggen_raten/src/assets/MKD.png
+flaggen_raten/src/assets/MLI.png
+flaggen_raten/src/assets/MLT.png
+flaggen_raten/src/assets/MMR.png
+flaggen_raten/src/assets/MNE.png
+flaggen_raten/src/assets/MNG.png
+flaggen_raten/src/assets/MNP.png
+flaggen_raten/src/assets/MOZ.png
+flaggen_raten/src/assets/MRT.png
+flaggen_raten/src/assets/MSR.png
+flaggen_raten/src/assets/MTQ.png
+flaggen_raten/src/assets/MUS.png
+flaggen_raten/src/assets/MWI.png
+flaggen_raten/src/assets/MYS.png
+flaggen_raten/src/assets/MYT.png
+flaggen_raten/src/assets/NAM.png
+flaggen_raten/src/assets/NCL.png
+flaggen_raten/src/assets/NER.png
+flaggen_raten/src/assets/NFK.png
+flaggen_raten/src/assets/NGA.png
+flaggen_raten/src/assets/NIC.png
+flaggen_raten/src/assets/NIU.png
+flaggen_raten/src/assets/NLD.png
+flaggen_raten/src/assets/NOR.png
+flaggen_raten/src/assets/NPL.png
+flaggen_raten/src/assets/NRU.png
+flaggen_raten/src/assets/NZL.png
+flaggen_raten/src/assets/OMN.png
+flaggen_raten/src/assets/PAK.png
+flaggen_raten/src/assets/PAN.png
+flaggen_raten/src/assets/PCN.png
+flaggen_raten/src/assets/PER.png
+flaggen_raten/src/assets/PHL.png
+flaggen_raten/src/assets/PLW.png
+flaggen_raten/src/assets/PNG.png
+flaggen_raten/src/assets/POL.png
+flaggen_raten/src/assets/PRI.png
+flaggen_raten/src/assets/PRK.png
+flaggen_raten/src/assets/PRT.png
+flaggen_raten/src/assets/PRY.png
+flaggen_raten/src/assets/PSE.png
+flaggen_raten/src/assets/PYF.png
+flaggen_raten/src/assets/QAT.png
+flaggen_raten/src/assets/REU.png
+flaggen_raten/src/assets/ROU.png
+flaggen_raten/src/assets/RUS.png
+flaggen_raten/src/assets/RWA.png
+flaggen_raten/src/assets/SAU.png
+flaggen_raten/src/assets/SDN.png
+flaggen_raten/src/assets/SEN.png
+flaggen_raten/src/assets/SGP.png
+flaggen_raten/src/assets/SGS.png
+flaggen_raten/src/assets/SHN.png
+flaggen_raten/src/assets/SJM.png
+flaggen_raten/src/assets/SLB.png
+flaggen_raten/src/assets/SLE.png
+flaggen_raten/src/assets/SLV.png
+flaggen_raten/src/assets/SMR.png
+flaggen_raten/src/assets/SOM.png
+flaggen_raten/src/assets/SPM.png
+flaggen_raten/src/assets/SRB.png
+flaggen_raten/src/assets/SSD.png
+flaggen_raten/src/assets/STP.png
+flaggen_raten/src/assets/SUR.png
+flaggen_raten/src/assets/SVK.png
+flaggen_raten/src/assets/SVN.png
+flaggen_raten/src/assets/SWE.png
+flaggen_raten/src/assets/SWZ.png
+flaggen_raten/src/assets/SXM.png
+flaggen_raten/src/assets/SYC.png
+flaggen_raten/src/assets/SYR.png
+flaggen_raten/src/assets/TCA.png
+flaggen_raten/src/assets/TCD.png
+flaggen_raten/src/assets/TGO.png
+flaggen_raten/src/assets/THA.png
+flaggen_raten/src/assets/TJK.png
+flaggen_raten/src/assets/TKL.png
+flaggen_raten/src/assets/TKM.png
+flaggen_raten/src/assets/TLS.png
+flaggen_raten/src/assets/TON.png
+flaggen_raten/src/assets/TTO.png
+flaggen_raten/src/assets/TUN.png
+flaggen_raten/src/assets/TUR.png
+flaggen_raten/src/assets/TUV.png
+flaggen_raten/src/assets/TWN.png
+flaggen_raten/src/assets/TZA.png
+flaggen_raten/src/assets/UGA.png
+flaggen_raten/src/assets/UKR.png
+flaggen_raten/src/assets/UMI.png
+flaggen_raten/src/assets/UNK.png
+flaggen_raten/src/assets/URY.png
+flaggen_raten/src/assets/USA.png
+flaggen_raten/src/assets/UZB.png
+flaggen_raten/src/assets/VAT.png
+flaggen_raten/src/assets/VCT.png
+flaggen_raten/src/assets/VEN.png
+flaggen_raten/src/assets/VGB.png
+flaggen_raten/src/assets/VIR.png
+flaggen_raten/src/assets/VNM.png
+flaggen_raten/src/assets/VUT.png
+flaggen_raten/src/assets/WLF.png
+flaggen_raten/src/assets/WSM.png
+flaggen_raten/src/assets/YEM.png
+flaggen_raten/src/assets/ZAF.png
+flaggen_raten/src/assets/ZMB.png
+flaggen_raten/src/assets/ZWE.png
