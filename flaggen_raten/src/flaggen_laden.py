@@ -7,10 +7,8 @@ laender = json.load(datei)
 
 for land in laender: 
     datei_name = land["cca3"]
-    #hauptstadt = land["capital"]
     flagge_url = land["flags"]["png"]
     print(datei_name)
-    #print(hauptstadt)
     print(flagge_url)
 
     response = requests.get(flagge_url)
