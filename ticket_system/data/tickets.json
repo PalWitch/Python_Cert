@@ -1,0 +1,66 @@
+[
+    {
+        "klasse": "BugTicket",
+        "id": "T-1001",
+        "titel": "Login kaputt",
+        "beschreibung": "User kann sich nicht einloggen",
+        "status": "resolved",
+        "prioritaet": 1,
+        "typ": "bug",
+        "ersteller": {
+            "klasse": "Kunde",
+            "name": "Hannah",
+            "email": "mueller@beispiel.de",
+            "kundennummer": "K-100"
+        },
+        "zustaendig": {
+            "klasse": "SupportMitarbeiter",
+            "name": "Ada",
+            "email": "ada@example.de",
+            "team": "First Level"
+        },
+        "erstellt_am": "2026-06-18T09:45:46",
+        "aktualisiert_am": "2026-06-18T09:45:46",
+        "kommentare": [
+            {
+                "autor": "Ada",
+                "text": "Ich prüfe das Problem.",
+                "erstellt_am": "2026-06-18T09:45:46"
+            }
+        ],
+        "statushistorie": [
+            {
+                "alter_status": "open",
+                "neuer_status": "in_progress",
+                "geaendert_von": "Ada",
+                "zeitpunkt": "2026-06-18T09:45:46"
+            },
+            {
+                "alter_status": "in_progress",
+                "neuer_status": "resolved",
+                "geaendert_von": "Ada",
+                "zeitpunkt": "2026-06-18T09:45:46"
+            }
+        ]
+    },
+    {
+        "klasse": "FeatureAnfrage",
+        "id": "T-1002",
+        "titel": "Dark Mode",
+        "beschreibung": "Bitte dunkles Design ergänzen",
+        "status": "open",
+        "prioritaet": 3,
+        "typ": "feature",
+        "ersteller": {
+            "klasse": "Kunde",
+            "name": "Hannah",
+            "email": "mueller@beispiel.de",
+            "kundennummer": "K-100"
+        },
+        "zustaendig": null,
+        "erstellt_am": "2026-06-18T09:45:46",
+        "aktualisiert_am": "2026-06-18T09:45:46",
+        "kommentare": [],
+        "statushistorie": []
+    }
+]
