@@ -1,3 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
 Material/Git_für_Einsteiger.pdf
 projekt_quiz/fragen.py
 projekt_quiz/fragen_mapping.py
