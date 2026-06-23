@@ -162,3 +162,104 @@ print("Längstes Wort:", laengstes_wort)
 print("Kürzestes Wort:", kuerzestes_wort)
 
 
+# Functions
+#
+# 1. Scope (global vs. local)
+# 2. Closures
+
+
+## Scope   (Gültigkeitsbereich)
+# Sichtbarkeit der Variable
+# innerhalb der Funktion / Modulweit
+
+outer = 1 # <- Wie lange ist diese Variable Gültig
+
+def main(inner):
+    print("main - inner: ", inner)
+    print("main - outer: ", outer)
+
+    def print_again():   # <- Closure = Innere Funktion + Verwenden von aüßeren Variablen  
+        print("print_again:", outer, inner)  # <- müssen sichtbar sein, wenn die Funktion definiert wird
+        # Zum Zeitpunkt des "def"inierens werden Variablen "verknüpft"
+
+    inner = 100
+    print_again()  # <- print_again=0x44f1a8
+    return print_again  # <- Funktion zurück geben (First-Class-Citizen)
+    # Aufräumen : (inneren) )Variablen/Funtionen werden aus dem Speicher genommen
+
+print(outer)
+
+if __name__ == '__main__':
+    print_again_fn = main(2)
+
+    print_again_fn() # <- Muss hier aufgerufen werden
+
+# Scope – global Keyword
+aktiv = False
+
+def toggle():
+    global aktiv
+    aktiv = not aktiv
+
+print(aktiv)   # False
+toggle()
+print(aktiv)   # True
+toggle()
+print(aktiv)   # False
+
+# Closure – Logger-Funktion
+def erstelle_logger(praefix):
+    def log(nachricht):
+        print(f"{praefix} {nachricht}")
+    return log
+
+db_log = erstelle_logger("[DB]")
+auth_log = erstelle_logger("[AUTH]")
+
+db_log("Verbindung hergestellt")   # [DB] Verbindung hergestellt
+auth_log("Login erfolgreich")      # [AUTH] Login erfolgreich
+db_log("Query ausgeführt")         # [DB] Query ausgeführt
+
+'''
+log ist eine Closure – sie merkt sich den Wert von praefix aus dem Enclosing Scope. 
+Dieses Muster wird in der Praxis häufig für Logger, Konfigurationen oder Factory-Funktionen eingesetzt.
+'''
+
+# Closure – Validierung mit Grenzwerten
+def erstelle_validator(min_wert, max_wert):
+    def validiere(wert):
+        return min_wert <= wert <= max_wert
+    return validiere
+
+ist_prozent = erstelle_validator(0, 100)
+ist_temperatur = erstelle_validator(-40, 60)
+
+print(ist_prozent(50))       # True
+print(ist_prozent(101))      # False
+print(ist_temperatur(-10))   # True
+print(ist_temperatur(80))    # False
+
+# Scope & Closure – Rabattrechner
+waehrung = "€"  # globale Variable
+
+def rabatt_rechner(prozent):
+    def berechne(preis):
+        reduziert = round(preis * (1 - prozent / 100), 2)
+        return f"{reduziert:.2f} {waehrung}"
+    return berechne
+
+mitarbeiter_rabatt = rabatt_rechner(20)
+vip_rabatt = rabatt_rechner(30)
+
+print(mitarbeiter_rabatt(100))     # 80.00 €
+print(vip_rabatt(100))             # 70.00 €
+print(mitarbeiter_rabatt(59.99))   # 47.99 €
+
+'''
+Hier kommen mehrere Konzepte zusammen:
+
+    Globaler Scope: waehrung wird in der inneren Funktion gelesen (LEGB-Regel: Global).
+    Closure:        berechne merkt sich den Wert von prozent aus dem Enclosing Scope.
+    Lokaler Scope:  reduziert und preis existieren nur innerhalb von berechne.
+
+'''
