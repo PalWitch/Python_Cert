@@ -558,3 +558,8 @@ flaggen_raten/venv_testing/main.py
 flaggen_raten/venv_testing/main.py
 flaggen_raten/README_Test.md
 gitignore_vorlage.txt
+mental_health/.~lock.Teen_Mental_Health_Dataset.csv#
+mental_health/initial_load.py
+mental_health/Teen_Mental_Health_Dataset.csv
+mental_health/auswertung.txt
+mental_health/main.py

@@ -157,3 +157,129 @@ b = {word: [letter for letter in word] for word in words}
 # swapped_my_dict = {1: 'A', 2: 'B', 3: 'C'}
 my_dict = {'A': 1, 'B': 2, 'C': 3}
 gedreht_my_dict = {v: k for k, v in my_dict.items()}
+
+
+# List Comprehension – Grundform
+'''
+Erstelle mit einer List Comprehension eine Liste, die die ersten 10 Vielfachen von 7 enthält (also [7, 14, 21, ..., 70]).
+'''
+vielfache = [7 * i for i in range(1, 11)]
+print(vielfache)  # [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
+
+
+# List Comprehension – mit Filter
+'''
+Gegeben ist eine Liste von Namen:
+
+namen = ["Anna", "Bo", "Christina", "Ed", "Friedrich", "Gia"]
+
+Erstelle mit einer List Comprehension eine neue Liste, die nur die Namen enthält, die mehr als 3 Zeichen haben.
+'''
+namen = ["Anna", "Bo", "Christina", "Ed", "Friedrich", "Gia"]
+
+lange_namen = [name for name in namen if len(name) > 3]
+print(lange_namen)  # ['Anna', 'Christina', 'Friedrich']
+
+
+# Set Comprehension – Grundform
+'''
+Gegeben ist eine Liste von Wörtern:
+
+woerter = ["Python", "programmieren", "Pasta", "lernen", "Praxis"]
+
+Erstelle mit einer Set Comprehension ein Set, das alle Anfangsbuchstaben (in Kleinbuchstaben) enthält.
+'''
+woerter = ["Python", "programmieren", "Pasta", "lernen", "Praxis"]
+
+anfang = {w[0].lower() for w in woerter}
+print(anfang)  # {'p', 'l'}
+'''
+Da ein Set keine Duplikate enthält, kommt 'p' nur einmal vor, obwohl drei Wörter mit P beginnen.
+'''
+
+# Set Comprehension – mit Filter
+'''
+Gegeben ist eine Liste von Zahlen (mit Duplikaten):
+
+zahlen = [3, -1, 4, -1, 5, 9, -2, 6, 5, 3, -5]
+
+Erstelle mit einer Set Comprehension ein Set, das nur die positiven Zahlen enthält (ohne Duplikate).
+'''
+zahlen = [3, -1, 4, -1, 5, 9, -2, 6, 5, 3, -5]
+
+positiv = {x for x in zahlen if x > 0}
+print(positiv)  # {3, 4, 5, 6, 9}
+
+
+# Dict Comprehension – Grundform
+'''
+Gegeben ist eine Liste von Städten:
+
+staedte = ["Berlin", "Hamburg", "München", "Köln"]
+
+Erstelle mit einer Dict Comprehension ein Dictionary, das jede Stadt als Key und die Länge des Namens als Value enthält.
+'''
+staedte = ["Berlin", "Hamburg", "München", "Köln"]
+
+laengen = {stadt: len(stadt) for stadt in staedte}
+print(laengen)  # {'Berlin': 6, 'Hamburg': 7, 'München': 7, 'Köln': 4}
+
+
+# Dict Comprehension – mit Filter
+'''
+Gegeben ist ein Dictionary mit Produktpreisen:
+
+preise = {"Laptop": 999, "Maus": 25, "Monitor": 349, "Kabel": 8, "Tastatur": 65}
+
+Erstelle mit einer Dict Comprehension ein neues Dictionary, das nur Produkte enthält, die mehr als 50 Euro kosten.
+'''
+preise = {"Laptop": 999, "Maus": 25, "Monitor": 349, "Kabel": 8, "Tastatur": 65}
+
+teuer = {produkt: preis for produkt, preis in preise.items() if preis > 50}
+print(teuer)  # {'Laptop': 999, 'Monitor': 349, 'Tastatur': 65}
+
+
+# Nested Comprehension – Lesen & Verstehen
+'''
+Lies den folgenden Code und beantworte die Fragen ohne ihn auszuführen:
+
+farben = ["rot", "blau"]
+groessen = ["S", "M", "L"]
+
+kombinationen = [f"{f}-{g}" for f in farben for g in groessen]
+print(kombinationen)
+
+    Was gibt print(kombinationen) aus?
+    Wie viele Elemente hat die Liste?
+    Schreibe den Code als verschachtelte for-Schleife um.
+
+Tipp
+
+Lies die Comprehension von links nach rechts:
+
+    f"{f}-{g}" → was wird pro Element erzeugt?
+    for f in farben → äußere Schleife
+    for g in groessen → innere Schleife
+'''
+
+# 1. Ausgabe:
+
+['rot-S', 'rot-M', 'rot-L', 'blau-S', 'blau-M', 'blau-L']
+
+# 2. Anzahl: 6 Elemente (2 Farben × 3 Größen)
+
+# 3. Als verschachtelte Schleife:
+
+farben = ["rot", "blau"]
+groessen = ["S", "M", "L"]
+
+kombinationen = []
+for f in farben:
+    for g in groessen:
+        kombinationen.append(f"{f}-{g}")
+
+print(kombinationen)
+'''
+Die Reihenfolge der for-Klauseln in der Comprehension entspricht der Verschachtelung der Schleifen: 
+Die äußere Schleife (for f in farben) steht zuerst, die innere (for g in groessen) danach.
+'''
