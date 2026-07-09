@@ -134,3 +134,43 @@ Hier kommen alle Konzepte zusammen:
     Mehrere except-Blöcke für verschiedene Fehlertypen
     Eingebaute Exceptions (TypeError) für Typprüfungen
 '''
+
+
+# Score prüfen
+class InvalidScoreError(Exception):
+    pass
+
+def add_score(score):
+    if score < 0 or score > 100:
+        raise InvalidScoreError("Score muss zwischen 0 und 100 liegen")
+    return "ok"
+
+
+# Gezielt abfangen
+try:
+    add_score(120)
+except InvalidScoreError as error:
+    print("Ungültiger Score:", error)
+except Exception as error:
+    print("Anderer Fehler:", error)
+
+
+# Exception mit Nachricht
+class InvalidAgeError(Exception):
+    pass
+
+def register(age):
+    if age < 18:
+        raise InvalidAgeError("Alter muss mindestens 18 sein")
+    return "registriert"
+
+
+# Eigene Exception nutzen
+class NotPositiveError(Exception):
+    pass
+
+def parse_positive_int(text):
+    zahl = int(text)
+    if zahl <= 0:
+        raise NotPositiveError("Zahl muss positiv sein")
+    return zahl

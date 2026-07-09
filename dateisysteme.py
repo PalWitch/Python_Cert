@@ -153,3 +153,17 @@ for datei in ziel_verzeichnis.iterdir():
         erweiterung = datei.suffix
         
         print(f"Dateiname: {dateiname}, Größe: {dateigroesse_kb:.2f}KB, Erweiterung: {erweiterung}")
+
+
+# Zeilen zählen
+def count_lines(path):
+    with open(path, "r", encoding="utf-8") as file:
+        return sum(1 for line in file)
+    
+
+# Datei kopieren
+def copy_text(source, target):
+    with open(source, "r", encoding="utf-8") as src:
+        content = src.read()
+    with open(target, "w", encoding="utf-8") as dst:
+        dst.write(content)

@@ -132,3 +132,162 @@ print(args_to_dict("a", 1, "b", 2))
 
 print(args_to_dict("name", "Nicky", "age"))
 # {'name': 'Nicky', 'age': None}
+
+
+
+# Scope – Lesezugriff
+'''
+Was gibt das folgende Programm aus? Überlege zuerst, bevor du es ausführst.
+
+name = "Alice"
+
+def begruessung():
+    print(f"Hallo, {name}!")
+
+begruessung()
+print(name)
+
+
+Ausgabe:
+
+Hallo, Alice!
+Alice
+
+Die Funktion begruessung() hat keinen eigenen name – sie liest daher die globale Variable. 
+Ein reiner Lesezugriff auf eine globale Variable ist innerhalb einer Funktion erlaubt.
+'''
+
+
+# Scope – global Keyword
+'''
+Schreibe eine Funktion toggle(), die eine globale Variable aktiv (Startwert False) bei jedem Aufruf umschaltet (True → False → True …). 
+Nutze das global-Keyword.
+
+Erwartetes Verhalten:
+
+print(aktiv)   # False
+toggle()
+print(aktiv)   # True
+toggle()
+print(aktiv)   # False
+'''
+aktiv = False
+
+def toggle():
+    global aktiv
+    aktiv = not aktiv
+
+print(aktiv)   # False
+toggle()
+print(aktiv)   # True
+toggle()
+print(aktiv)   # False
+'''
+Ohne global würde Python aktiv als lokale Variable interpretieren und einen UnboundLocalError auslösen, weil man versucht, 
+eine lokale Variable zu lesen, bevor sie zugewiesen wurde.
+'''
+
+
+# Closure – Logger-Funktion
+'''
+In vielen Projekten möchte man Log-Nachrichten mit einem festen Präfix versehen (z. B. dem Modulnamen).
+
+Schreibe eine Funktion erstelle_logger(praefix), die eine neue Funktion zurückgibt. Die zurückgegebene Funktion nimmt eine nachricht entgegen und gibt sie mit dem Präfix aus.
+
+Erwartetes Verhalten:
+
+db_log = erstelle_logger("[DB]")
+auth_log = erstelle_logger("[AUTH]")
+
+db_log("Verbindung hergestellt")   # [DB] Verbindung hergestellt
+auth_log("Login erfolgreich")      # [AUTH] Login erfolgreich
+db_log("Query ausgeführt")         # [DB] Query ausgeführt
+'''
+def erstelle_logger(praefix):
+    def log(nachricht):
+        print(f"{praefix} {nachricht}")
+    return log
+
+db_log = erstelle_logger("[DB]")
+auth_log = erstelle_logger("[AUTH]")
+
+db_log("Verbindung hergestellt")   # [DB] Verbindung hergestellt
+auth_log("Login erfolgreich")      # [AUTH] Login erfolgreich
+db_log("Query ausgeführt")         # [DB] Query ausgeführt
+'''
+log ist eine Closure – sie merkt sich den Wert von praefix aus dem Enclosing Scope. 
+Dieses Muster wird in der Praxis häufig für Logger, Konfigurationen oder Factory-Funktionen eingesetzt.
+'''
+
+ 
+# Closure – Validierung mit Grenzwerten
+'''
+Bei der Eingabevalidierung prüft man oft, ob ein Wert in einem bestimmten Bereich liegt.
+
+Schreibe eine Funktion erstelle_validator(min_wert, max_wert), die eine neue Funktion zurückgibt. Die zurückgegebene Funktion nimmt einen wert entgegen und gibt True zurück, wenn er im Bereich min_wert bis max_wert (jeweils inklusive) liegt, sonst False.
+
+Erwartetes Verhalten:
+
+ist_prozent = erstelle_validator(0, 100)
+ist_temperatur = erstelle_validator(-40, 60)
+
+print(ist_prozent(50))       # True
+print(ist_prozent(101))      # False
+print(ist_temperatur(-10))   # True
+print(ist_temperatur(80))    # False
+'''
+def erstelle_validator(min_wert, max_wert):
+    def validiere(wert):
+        return min_wert <= wert <= max_wert
+    return validiere
+
+ist_prozent = erstelle_validator(0, 100)
+ist_temperatur = erstelle_validator(-40, 60)
+
+print(ist_prozent(50))       # True
+print(ist_prozent(101))      # False
+print(ist_temperatur(-10))   # True
+print(ist_temperatur(80))    # False
+'''
+Die innere Funktion validiere ist eine Closure, die sich min_wert und max_wert merkt. 
+Solche Validierungs-Fabriken sind ein gängiges Muster bei der Eingabeprüfung.
+'''
+
+
+# Scope & Closure – Rabattrechner
+'''
+Erstelle ein kleines Rabatt-System mit Scope und Closure:
+
+    Definiere eine globale Variable waehrung = "€".
+    Schreibe eine Funktion rabatt_rechner(prozent), die eine neue Funktion zurückgibt. Die zurückgegebene Funktion nimmt einen preis entgegen und gibt den rabattierten Preis als formatierten String zurück (z. B. "80.00 €").
+    Erstelle damit zwei Rabatt-Funktionen: mitarbeiter_rabatt (20 %) und vip_rabatt (30 %).
+
+Erwartetes Verhalten:
+
+print(mitarbeiter_rabatt(100))      # "80.00 €"
+print(vip_rabatt(100))              # "70.00 €"
+print(mitarbeiter_rabatt(59.99))    # "47.99 €"
+
+Hinweis: Nutze round() für die Rundung auf zwei Nachkommastellen.
+'''
+waehrung = "€"  # globale Variable
+
+def rabatt_rechner(prozent):
+    def berechne(preis):
+        reduziert = round(preis * (1 - prozent / 100), 2)
+        return f"{reduziert:.2f} {waehrung}"
+    return berechne
+
+mitarbeiter_rabatt = rabatt_rechner(20)
+vip_rabatt = rabatt_rechner(30)
+
+print(mitarbeiter_rabatt(100))     # 80.00 €
+print(vip_rabatt(100))             # 70.00 €
+print(mitarbeiter_rabatt(59.99))   # 47.99 €
+'''
+Hier kommen mehrere Konzepte zusammen:
+
+    Globaler Scope: waehrung wird in der inneren Funktion gelesen (LEGB-Regel: Global).
+    Closure:        berechne merkt sich den Wert von prozent aus dem Enclosing Scope.
+    Lokaler Scope:  reduziert und preis existieren nur innerhalb von berechne.
+'''

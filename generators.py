@@ -241,3 +241,50 @@ Erklärung: Die Funktion unterscheidet zwischen positivem und negativem step:
     step == 0 löst wie bei echtem range() einen ValueError aus
 Im Gegensatz zum echten range() (das ein spezielles Objekt ist) erzeugt unsere Version einen einfachen Generator.
 '''
+
+
+# Quadratzahlen-Generator
+def quadratzahlen(n):
+    for i in range(1, n + 1):
+        yield i ** 2    
+
+print(list(quadratzahlen(5)))  # [1, 4, 9, 16, 25]
+
+
+# Buchstaben-Generator
+def buchstaben(wort):
+    for buchstabe in wort:
+        yield buchstabe
+
+print(list(buchstaben("Hallo")))  # ['H', 'a', 'l', 'l', 'o']
+
+
+# Running Sum
+def running_sum(numbers):
+    for i in range(len(numbers)):
+        yield sum(numbers[:i + 1])   
+
+'''
+def running_sum(numbers):
+    current_sum = 0
+    for num in numbers:
+        current_sum += num
+        yield current_sum
+'''   
+
+print(list(running_sum([1, 2, 3, 4])))  # [1, 3, 6, 10]
+
+
+# Generator schreiben (gerade Zahlen)
+def even_numbers(limit):
+    current = 0
+    while current <= limit:
+        yield current
+        current += 2
+
+
+# Filter-Generator schreiben (nur Wörter, deren Länge mindestens min_length ist)
+def only_long(words, min_length):
+    for word in words:
+        if len(word) >= min_length:
+            yield word
